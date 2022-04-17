@@ -1,0 +1,36 @@
+<script>
+    function test(){
+        //O codigo inserido será a funcionalidade da função
+        console.log('chamando a função test');
+    }
+    test();
+    //Chamada de uma função
+
+    //Função com parametros:
+    function testcparametros(nome,idade){
+        console.log("o nome passado é " + nome + " e a idade é " + idade);
+    }
+    testcparametros("thalison",27);
+
+    //Função que apenas retorna um valor
+    function pegarNome(parametro){
+        if (parametro == "criador"){
+            return "Thalison";
+        } else{
+            return "random";
+        }
+    }
+    var nome = pegarNome("criador");
+    console.log(nome);
+
+    //Função atraves da variavel
+    var func = function(){
+        alert('olá mundo');
+    }
+    func();
+
+    //Criar função já chamando a mesma
+    (function(){
+        alert('função automatica');
+    })();
+</script>
