@@ -1,2 +1,2 @@
-# JavaScript Basic
+# Basic Web Developer
 
