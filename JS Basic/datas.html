@@ -1,14 +1,28 @@
 <html>
     <body>
         <script>
-            var date = new Date();
+
+            //Data personalizada
+            var date = new Date('07/07/2022');
+            var newdate = new Date('02/02/2001');
+            
+            //Calcular a diferença em dias 
+            var dif = (date.getTime() - newdate.getTime()) / (1000 * 3600 * 24) + ' dias';
+            alert(dif);
+            
+            //var date = new Date();
             //Dia do mês
-            alert(date.getDate());
+            //alert(date.getDate());
+            
             //Dia da semana
-            alert(date.getDay());
+            //alert(date.getDay());
+            
             //Ano
-            alert(date.getFullYear());
+            //alert(date.getFullYear());
+            
             //https://www.w3schools.com/js/js_dates.asp
+
+            
         </script>
     </body>
 </html>
