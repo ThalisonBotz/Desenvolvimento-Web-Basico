@@ -7,10 +7,17 @@
             var newdate = new Date('02/02/2001');
             
             //Calcular a diferença em dias 
-            var dif = (date.getTime() - newdate.getTime()) / (1000 * 3600 * 24) + ' dias';
-            alert(dif);
-            
+            var dif = Number(date.getTime() - newdate.getTime()) / (1000 * 3600 * 24) + ' dias';
+            value =  parseInt(dif);
+            alert(value + ' Dias de diferença entre as datas');''
+
+            //Calcula a diferença em anos
+            var year = (date.getFullYear() - newdate.getFullYear());
+            yeardif = parseInt(year);
+            alert('A diferença é de ' + yeardif + ' anos');
+
             //var date = new Date();
+            
             //Dia do mês
             //alert(date.getDate());
             
