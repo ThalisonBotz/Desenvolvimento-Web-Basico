@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <script> 
+
+        // Class é mais ultilizado na orientação a objetos, de forma que os mesmos possam ser modificados.
+            class animal{
+                //O constructor é usado para definir quais atributos da classe podem ser alterados.
+                constructor(name){
+                    this.name = 'gato';
+                }
+                //Uma função criada dentro da classe.
+                printName(){
+                    return this.name;
+                }
+            }
+            //O extends é usado para que uma classe herde todo o conteudo de outra classe.
+            class tipo extends animal{
+                constructor(name){
+                    //O super é usado para acessar um objeto da classe pai.
+                    super(name);
+                    this.race = 'vira-lata'
+                }
+
+                printRace(){
+                    return this.race;
+                }
+            }
+
+            tipo = new tipo();
+            alert(tipo.printName() + " " + tipo.printRace());
+        </script>
+    </body>
+</html>
